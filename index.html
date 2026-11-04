@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0a08" />
+  <title>Seven Hills — Restaurant & Bar · Yaoundé</title>
+  <meta name="description" content="Seven Hills, restaurant et bar au Carrefour PJ, Elig-Essono, Yaoundé. Cuisine raffinée, design moderne, cocktails. Ouvert 7j/7 de 11h à minuit. Réservations : +237 654 777 222." />
+  <meta property="og:title" content="Seven Hills — Yaoundé" />
+  <meta property="og:description" content="Cuisine raffinée et design moderne, au Carrefour PJ, Elig-Essono." />
+  <meta property="og:image" content="assets/img/lg/facade-nuit.jpg" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=6" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Seven Hills",
+    "image": "assets/img/lg/facade-nuit.jpg",
+    "telephone": "+237654777222",
+    "address": { "@type": "PostalAddress", "streetAddress": "Carrefour Police Judiciaire, Elig-Essono", "addressLocality": "Yaoundé", "addressCountry": "CM" },
+    "openingHours": "Mo-Su 11:00-24:00",
+    "servesCuisine": ["Pizza", "Burgers", "Libanaise", "Grillades", "Cocktails"],
+    "acceptsReservations": true,
+    "sameAs": ["https://www.instagram.com/sevenhillsyde/", "https://www.facebook.com/p/Seven-Hills-Restaurant-100093904797667/", "https://www.tiktok.com/@seven_hills.yde"]
+  }
+  </script>
+</head>
+<body class="is-loading">
+
+  <!-- Logo réutilisable -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <clipPath id="pill-clip"><rect x="6" y="6" width="88" height="158" rx="44" /></clipPath>
+      <symbol id="emblem" viewBox="0 0 100 170">
+        <rect class="e-frame" x="2" y="2" width="96" height="166" rx="48" />
+        <rect class="e-frame" x="6" y="6" width="88" height="158" rx="44" />
+        <g clip-path="url(#pill-clip)">
+          <path class="e-line" d="M50 104 L8 40 M50 104 L22 22 M50 104 L40 8 M50 104 L4 66" />
+          <path class="e-line" d="M30 104 A20 20 0 0 1 70 104" />
+          <path class="e-line" d="M0 104 Q50 88 100 104 M0 116 Q50 100 100 116 M0 128 Q50 112 100 128 M0 140 Q50 124 100 140 M0 152 Q50 136 100 152 M0 164 Q50 148 100 164" />
+          <path class="e-line" d="M66 100 C66 78 68 60 74 40 M68 74 C58 70 56 62 58 56 C64 58 68 64 68 74 Z M70 60 C78 58 84 50 84 44 C76 44 72 50 70 60 Z M72 48 C64 44 62 36 64 30 C70 32 72 40 72 48 Z M74 40 C80 34 82 26 80 20 C74 24 72 32 74 40 Z" />
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Préchargement -->
+  <div class="loader" aria-hidden="true">
+    <svg class="loader-emblem"><use href="#emblem" /></svg>
+    <div class="loader-count"><span class="loader-num">01</span><span class="loader-total">/ 07</span></div>
+    <p class="loader-word">Yaoundé, la ville aux sept collines</p>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="nav-brand" href="#top" aria-label="Seven Hills, retour en haut">
+      <svg class="nav-emblem"><use href="#emblem" /></svg>
+      <span>Seven Hills</span>
+    </a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#maison" data-magnetic>La maison</a>
+      <a href="#carte" data-magnetic>La carte</a>
+      <a href="#bar" data-magnetic>Le bar</a>
+      <a href="#evenements" data-magnetic>Événements</a>
+      <a href="#infos" data-magnetic>Infos</a>
+    </nav>
+    <a class="nav-cta" href="tel:+237654777222" data-magnetic><span>Réserver</span></a>
+    <button class="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <div class="menu-overlay" aria-hidden="true">
+    <nav>
+      <a href="#maison"><small>01</small>La maison</a>
+      <a href="#carte"><small>02</small>La carte</a>
+      <a href="#bar"><small>03</small>Le bar</a>
+      <a href="#evenements"><small>04</small>Événements</a>
+      <a href="#infos"><small>05</small>Infos & réservation</a>
+    </nav>
+    <div class="menu-foot">
+      <a href="tel:+237654777222">+237 654 777 222</a>
+      <a href="https://www.instagram.com/sevenhillsyde/" target="_blank" rel="noreferrer">Instagram</a>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- 1. HERO 3D -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="hero-kicker"><span class="line"></span>Restaurant & bar · Elig-Essono, Yaoundé</p>
+        <h1 id="hero-title" class="hero-title">
+          <span class="split">Seven</span>
+          <span class="split italic">Hills</span>
+        </h1>
+        <p class="hero-sub">Yaoundé compte sept collines.<br />Nous, une table qui vous attend.</p>
+      </div>
+      <div class="hero-meta">
+        <span>04°N 11°E</span>
+        <span class="hero-scroll"><i></i>Défiler</span>
+        <span>Ouvert 7j/7 · 11h — minuit</span>
+      </div>
+    </section>
+
+    <!-- 2. MANIFESTE -->
+    <section class="manifesto" id="maison">
+      <p class="label"><span>01</span> La maison</p>
+      <p class="manifesto-text" data-words>
+        Au Carrefour PJ, une maison sur deux étages, vitrée du sol au plafond.
+        On y vient pour déjeuner, on y revient pour dîner, et souvent, on y reste jusqu'à minuit.
+        Cuisine raffinée, design moderne — et le temps qu'il faut.
+      </p>
+      <div class="facts">
+        <div class="fact"><b data-count="7">7</b><span>jours sur 7</span></div>
+        <div class="fact"><b data-count="2">2</b><span>salles climatisées, dont une à l'étage</span></div>
+        <div class="fact"><b>11h<em>—</em>00h</b><span>sur place, à emporter, en livraison</span></div>
+      </div>
+    </section>
+
+    <!-- 3. ARCHE (reveal vidéo) -->
+    <section class="arch-reveal" aria-label="L'ambiance en salle">
+      <div class="arch-stage">
+        <div class="arch-window">
+          <video class="arch-video" data-sd="assets/video/ambiance-sd.mp4" data-hd="assets/video/ambiance-hd.mp4" poster="assets/img/poster-ambiance.jpg" muted loop playsinline preload="none"></video>
+        </div>
+        <h2 class="arch-caption">
+          <span class="arch-l">Le soir</span>
+          <span class="arch-r italic">s'allume</span>
+        </h2>
+      </div>
+    </section>
+
+    <!-- 4. LE LIEU — défilement horizontal -->
+    <section class="place" aria-labelledby="place-title">
+      <div class="place-head">
+        <p class="label"><span>02</span> Le lieu</p>
+        <h2 id="place-title" class="display">Verre, acier<br /><em>& végétal.</em></h2>
+      </div>
+      <div class="place-pin">
+        <div class="place-track">
+          <figure class="panel panel-tall">
+            <div class="panel-media"><img src="assets/img/sm/facade-nuit.jpg" data-hd="assets/img/lg/facade-nuit.jpg" alt="Façade vitrée du Seven Hills la nuit, enseigne lumineuse" loading="lazy" /></div>
+            <figcaption><span>i.</span> La façade, à la nuit tombée</figcaption>
+          </figure>
+          <figure class="panel panel-wide">
+            <div class="panel-media"><img src="assets/img/sm/salle-etageres.jpg" data-hd="assets/img/lg/salle-etageres.jpg" alt="Salle principale avec cloisons d'étagères végétales et banquettes" loading="lazy" /></div>
+            <figcaption><span>ii.</span> Les cloisons végétales de la grande salle</figcaption>
+          </figure>
+          <div class="panel panel-quote">
+            <p>« Cuisine raffinée et design moderne, un cadre exceptionnel. »</p>
+            <span>— @sevenhillsyde</span>
+          </div>
+          <figure class="panel panel-tall">
+            <div class="panel-media"><img src="assets/img/sm/salle-vegetal.jpg" data-hd="assets/img/lg/salle-vegetal.jpg" alt="Vue à travers une jardinière vers les banquettes près des baies vitrées" loading="lazy" /></div>
+            <figcaption><span>iii.</span> Banquettes, lumière du jour</figcaption>
+          </figure>
+          <figure class="panel panel-wide">
+            <div class="panel-media"><img src="assets/img/sm/escalier-galerie.jpg" data-hd="assets/img/lg/escalier-galerie.jpg" alt="Escalier bordé de portraits en noir et blanc sous une verrière végétale" loading="lazy" /></div>
+            <figcaption><span>iv.</span> L'escalier des portraits</figcaption>
+          </figure>
+          <figure class="panel panel-tall">
+            <div class="panel-media"><img src="assets/img/escalier-verriere.jpg" alt="Verrière couverte de feuillage et guirlandes au-dessus de l'escalier" loading="lazy" /></div>
+            <figcaption><span>v.</span> Sous la verrière, vers l'étage</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. LA CARTE -->
+    <section class="menu" id="carte" aria-labelledby="menu-title">
+      <div class="menu-head">
+        <p class="label"><span>03</span> La carte</p>
+        <h2 id="menu-title" class="display">À partager,<br /><em>ou pas.</em></h2>
+        <div class="menu-side">
+          <div class="arch-frame menu-video"><video data-sd="assets/video/pizza.mp4" poster="assets/img/poster-pizza.jpg" muted loop playsinline preload="none"></video></div>
+          <p class="menu-note">Du four à pizza au grill, une carte courte et généreuse. Elle évolue au fil des saisons — demandez les suggestions du jour.</p>
+        </div>
+      </div>
+
+      <ul class="dishes">
+        <li class="dish" data-img="assets/img/pizzaiolo.jpg">
+          <span class="dish-n">01</span><span class="dish-name">Pizzas</span><span class="dish-desc">Pâte étirée à la main, cuisson au four · pepperoni, mozzarella</span>
+          <img class="dish-thumb" src="assets/img/sm/pizza-pepperoni.jpg" alt="" loading="lazy" />
+        </li>
+        <li class="dish" data-img="assets/img/burger-daiquiri.jpg">
+          <span class="dish-n">02</span><span class="dish-name">Burgers</span><span class="dish-desc">Servis sur ardoise, frites maison</span>
+          <img class="dish-thumb" src="assets/img/burger-daiquiri.jpg" alt="" loading="lazy" />
+        </li>
+        <li class="dish" data-img="assets/img/shawarma-cocktail.jpg">
+          <span class="dish-n">03</span><span class="dish-name">Shawarma & tawook</span><span class="dish-desc">Saveurs libanaises · tawook au fromage</span>
+          <img class="dish-thumb" src="assets/img/shawarma-cocktail.jpg" alt="" loading="lazy" />
+        </li>
+        <li class="dish" data-img="assets/img/plat-signature.jpg">
+          <span class="dish-n">04</span><span class="dish-name">Grillades</span><span class="dish-desc">Saucisses de bœuf, travers de porc, plats signature</span>
+          <img class="dish-thumb" src="assets/img/plat-signature.jpg" alt="" loading="lazy" />
+        </li>
+        <li class="dish" data-img="assets/img/pates.jpg">
+          <span class="dish-n">05</span><span class="dish-name">Pâtes</span><span class="dish-desc">Crémeuses, généreuses, servies à l'assiette creuse</span>
+          <img class="dish-thumb" src="assets/img/pates.jpg" alt="" loading="lazy" />
+        </li>
+        <li class="dish" data-img="assets/img/sm/plateau-poulet.jpg" data-img-hd="assets/img/lg/plateau-poulet.jpg">
+          <span class="dish-n">06</span><span class="dish-name">Plateaux</span><span class="dish-desc">Poulet croustillant, fish & chips, à partager</span>
+          <img class="dish-thumb" src="assets/img/sm/plateau-poulet.jpg" alt="" loading="lazy" />
+        </li>
+        <li class="dish" data-img="assets/img/mojito-concombre.jpg">
+          <span class="dish-n">07</span><span class="dish-name">Salades & desserts</span><span class="dish-desc">Mexicaine, pâtes au thon · fondant au chocolat, crêpes</span>
+          <img class="dish-thumb" src="assets/img/mojito-concombre.jpg" alt="" loading="lazy" />
+        </li>
+      </ul>
+      <div class="dish-preview" aria-hidden="true"><img alt="" /></div>
+    </section>
+
+    <!-- 6. LE BAR -->
+    <section class="bar" id="bar" aria-labelledby="bar-title">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Cocktails</span><i>✦</i><span class="italic">Mocktails</span><i>✦</i><span>Vins</span><i>✦</i><span class="italic">Chichas</span><i>✦</i><span>Jus naturels</span><i>✦</i><span class="italic">Milkshakes</span><i>✦</i>
+          <span>Cocktails</span><i>✦</i><span class="italic">Mocktails</span><i>✦</i><span>Vins</span><i>✦</i><span class="italic">Chichas</span><i>✦</i><span>Jus naturels</span><i>✦</i><span class="italic">Milkshakes</span><i>✦</i>
+        </div>
+      </div>
+
+      <div class="bar-grid">
+        <div class="bar-copy">
+          <p class="label"><span>04</span> Le bar</p>
+          <h2 id="bar-title" class="display">Secoué,<br /><em>pas pressé.</em></h2>
+          <p>Daiquiri à la fraise, mojito au concombre, créations du moment : derrière le comptoir, chaque verre est monté à la commande. Avec ou sans alcool, bières locales, vins, café et thé — et des chichas pour prolonger la soirée.</p>
+        </div>
+        <div class="bar-visuals">
+          <div class="tilt arch-frame bar-v1" data-tilt>
+            <video data-sd="assets/video/bar.mp4" poster="assets/img/poster-bar.jpg" muted loop playsinline preload="none" aria-label="Préparation d'un cocktail au comptoir"></video>
+          </div>
+          <div class="tilt arch-frame bar-v2" data-tilt>
+            <img src="assets/img/mojito-concombre.jpg" alt="Mojito au concombre sur une table en bois" loading="lazy" />
+          </div>
+          <img class="bar-float" src="assets/img/sm/daiquiri.jpg" alt="Daiquiri à la fraise" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. INSTANTS — carrousel 3D -->
+    <section class="ring-section" aria-labelledby="ring-title">
+      <div class="ring-head">
+        <p class="label"><span>05</span> Instants</p>
+        <h2 id="ring-title" class="display">Vu sur<br /><em>@sevenhillsyde</em></h2>
+      </div>
+      <div class="ring-stage" data-cursor="Glisser">
+        <div class="ring">
+          <figure><img src="assets/img/sm/pizza-pepperoni.jpg" alt="Pizza pepperoni" loading="lazy" /></figure>
+          <figure><img src="assets/img/mojito-concombre.jpg" alt="Mojito au concombre" loading="lazy" /></figure>
+          <figure><img src="assets/img/bartender.jpg" alt="Le barman prépare un cocktail" loading="lazy" /></figure>
+          <figure><img src="assets/img/pates.jpg" alt="Assiette de pâtes" loading="lazy" /></figure>
+          <figure><img src="assets/img/cocktail-orange.jpg" alt="Cocktail orangé" loading="lazy" /></figure>
+          <figure><img src="assets/img/plat-signature.jpg" alt="Plat signature" loading="lazy" /></figure>
+          <figure><img src="assets/img/pizzaiolo.jpg" alt="Le pizzaiolo devant le four" loading="lazy" /></figure>
+          <figure><img src="assets/img/burger-daiquiri.jpg" alt="Burger, frites et daiquiri" loading="lazy" /></figure>
+          <figure><img src="assets/img/escalier-verriere.jpg" alt="L'escalier sous la verrière" loading="lazy" /></figure>
+          <figure><img src="assets/img/shawarma-cocktail.jpg" alt="Shawarma et cocktail" loading="lazy" /></figure>
+        </div>
+      </div>
+      <a class="pill-link" href="https://www.instagram.com/sevenhillsyde/" target="_blank" rel="noreferrer" data-magnetic>Suivre sur Instagram <span>↗</span></a>
+    </section>
+
+    <!-- 8. ÉVÉNEMENTS -->
+    <section class="events" id="evenements" aria-labelledby="events-title">
+      <div class="events-head">
+        <p class="label"><span>06</span> Événements</p>
+        <h2 id="events-title" class="display">Votre occasion,<br /><em>notre maison.</em></h2>
+      </div>
+      <ol class="occasions">
+        <li><span class="occ-n">I</span><h3>Anniversaires</h3><p>Une table dressée, un gâteau qui arrive au bon moment.</p></li>
+        <li><span class="occ-n">II</span><h3>Réunions professionnelles</h3><p>Déjeuners d'affaires au calme, salle climatisée à l'étage.</p></li>
+        <li><span class="occ-n">III</span><h3>Entre amis, en famille</h3><p>Des plateaux à partager et des carafes qui circulent.</p></li>
+        <li><span class="occ-n">IV</span><h3>Dîner en amoureux</h3><p>Une banquette près des baies vitrées, la lumière tamisée.</p></li>
+      </ol>
+      <div class="private">
+        <img src="assets/img/sm/salle-etageres.jpg" data-hd="assets/img/lg/salle-etageres.jpg" alt="" loading="lazy" />
+        <div>
+          <h3>Privatisation</h3>
+          <p>La salle de l'étage ou la maison entière peuvent être réservées pour vos événements. Parlons-en.</p>
+          <a class="pill-link" href="tel:+237654777222" data-magnetic>Appeler le +237 654 777 222 <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. INFOS -->
+    <section class="infos" id="infos" aria-labelledby="infos-title">
+      <div class="infos-grid">
+        <div>
+          <p class="label"><span>07</span> Nous trouver</p>
+          <h2 id="infos-title" class="display">Carrefour PJ,<br /><em>Elig-Essono.</em></h2>
+          <dl class="info-list">
+            <div><dt>Adresse</dt><dd>Carrefour Police Judiciaire<br />Elig-Essono, Yaoundé — Cameroun</dd></div>
+            <div><dt>Horaires</dt><dd>Tous les jours<br />11h — minuit</dd></div>
+            <div><dt>Réservations</dt><dd><a href="tel:+237654777222">+237 654 777 222</a></dd></div>
+            <div><dt>Services</dt><dd>Sur place · À emporter · Livraison</dd></div>
+          </dl>
+          <div class="info-actions">
+            <a class="btn-gold" href="tel:+237654777222" data-magnetic><span>Réserver une table</span></a>
+            <a class="pill-link" href="https://wa.me/237654777222" target="_blank" rel="noreferrer" data-magnetic>WhatsApp <span>↗</span></a>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe title="Carte : Seven Hills, Carrefour PJ, Elig-Essono, Yaoundé" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Seven+Hills+Restaurant+Elig-Essono+Yaound%C3%A9&output=embed"></iframe>
+          <a class="map-open" href="https://www.google.com/maps/search/?api=1&query=Seven+Hills+Restaurant+Elig-Essono+Yaounde" target="_blank" rel="noreferrer">Ouvrir dans Google Maps ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <svg class="footer-emblem"><use href="#emblem" /></svg>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/sevenhillsyde/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/p/Seven-Hills-Restaurant-100093904797667/" target="_blank" rel="noreferrer">Facebook</a>
+        <a href="https://www.tiktok.com/@seven_hills.yde" target="_blank" rel="noreferrer">TikTok</a>
+      </div>
+      <a class="back-top" href="#top">Retour en haut ↑</a>
+    </div>
+    <p class="footer-word" aria-hidden="true"><span>Seven</span> <span class="italic">Hills</span></p>
+    <div class="footer-bottom">
+      <small>© <span class="year">2026</span> Seven Hills · Yaoundé</small>
+      <small>Carrefour PJ, Elig-Essono</small>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }</script>
+  <script type="module" src="js/main.js?v=6"></script>
+</body>
+</html>
